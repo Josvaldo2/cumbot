@@ -1,6 +1,8 @@
 import discord
-from configs import Token
+from dotenv import load_dotenv
+from os import getenv
 
+load_dotenv()
 client = discord.Client()
 
 @client.event
@@ -15,4 +17,4 @@ async def on_message(msg):
     if msg.content.lower() in ('ola cumbot', 'ola cumboy'):
         await msg.channel.send(f'ola {msg.author.mention}')
 
-client.run(Token)
+client.run(getenv('TOKEN'))

@@ -1,4 +1,4 @@
 # cumbot
 bot ruim 👍
 
-feito no discord.py, mas provavelmente vou refazer ele algum dia com outra biblioteca
+feito usando o pycord como base, mas também pode rodar com o discord.py ou outro fork
